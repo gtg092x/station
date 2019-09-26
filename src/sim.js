@@ -1,4 +1,4 @@
-import canvas from './canvases/tree'
+import canvas from './canvases/chase'
 
 const { Converter } = require("ffmpeg-stream")
 
@@ -21,6 +21,7 @@ const minResolveWait = (fn, time) => {
 }
 
 const sim = async (context, next) => {
+
 
   context.status  = 200
 

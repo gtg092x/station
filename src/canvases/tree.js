@@ -13,7 +13,7 @@ import { createCanvas } from 'canvas';
 // 定数
 // -----------------------------------------
 
-var FPS = 60; // フレームレート
+var FPS = 30; // フレームレート
 var INTERVAL_SEC = 1000 / FPS >> 0; // インターバル時間
 
 // -----------------------------------------
@@ -21,7 +21,7 @@ var INTERVAL_SEC = 1000 / FPS >> 0; // インターバル時間
 // -----------------------------------------
 
 // 変数の初期化
-const canvas = createCanvas(465, 465)
+const canvas = createCanvas(464, 464)
 var context = canvas.getContext("2d");
 var step = 0.0;
 var toRadian = Math.PI / 180;

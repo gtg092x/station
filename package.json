@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/start"
+    "dev": "babel-node src/start"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",

@@ -1,4 +1,5 @@
 import { createCanvas } from 'canvas';
+import { getCurrentColor } from '../state';
 
   var Camera, Perspective, Transform3D, c, cv, drawCircle, fps, markers, n, num, offset, prs, resize, theta, time, trackCoord,
     __hasProp = {}.hasOwnProperty,
@@ -181,7 +182,7 @@ import { createCanvas } from 'canvas';
 
   })();
 
-  cv = createCanvas(500, 500);
+  cv = createCanvas(1500, 500);
 
   c = cv.getContext('2d');
 
@@ -248,7 +249,7 @@ import { createCanvas } from 'canvas';
     for (_i = 0, _len = markers.length; _i < _len; _i++) {
       marker = markers[_i];
       point = tf.project(marker);
-      drawCircle(point, 'orange');
+      drawCircle(point, getCurrentColor());
     }
     point = tf.project(target);
     drawCircle(point, 'red');
@@ -263,4 +264,4 @@ import { createCanvas } from 'canvas';
     return theta = (theta + 0.008) % (2 * Math.PI);
   }, 1000 / 120);
 
-export default canvas
+export default cv
