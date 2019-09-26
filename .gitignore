@@ -1,0 +1,11 @@
+node_modules
+*.db
+.DS_Store
+*-debug.log
+yarn.lock
+dump.rdb
+data
+logs
+scratch
+packages/*/lib
+media

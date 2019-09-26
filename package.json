@@ -1,0 +1,29 @@
+{
+  "name": "strm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/start"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "canvas": "^2.6.0",
+    "ffmpeg-stream": "^0.6.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "koa": "^2.8.1",
+    "koa-mount": "^4.0.0",
+    "lodash": "^4.17.15"
+  }
+}
