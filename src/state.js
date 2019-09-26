@@ -1,4 +1,4 @@
-const state = {
+export const state = {
   colorIndex: 1,
 }
 
